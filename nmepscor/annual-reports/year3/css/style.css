@@ -127,6 +127,19 @@
 
 	footer {
 		margin-top: 2em;
+		
+	}
+	
+	.footer-bottom {
+		position: relative;
+		text-align:center;
+		margin-top:2em;
+		background: rgba(0,0,0,0.65);
+		padding:1.5em;
+		color: #fff;
+		color: rgba(185,186,187,0.5);
+		/*overflow: hidden;*/
+		clear: left;
 	}
 
 	br.clear {
@@ -143,6 +156,8 @@
 			section > :last-child,
 			article > :last-child {
 				margin-bottom: 0;
+				background: rgba(0,0,0,0.65);
+				padding:1.5em;
 			}
 
 			section > .content > :last-child,
@@ -316,8 +331,6 @@
 				-webkit-appearance: none;
 				-o-appearance: none;
 				-ms-appearance: none;
-				appearance: none;
-
 				-moz-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 				-webkit-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 				-o-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -428,8 +441,6 @@
 			-webkit-appearance: none;
 			-o-appearance: none;
 			-ms-appearance: none;
-			appearance: none;
-
 			-moz-transition: all 0.2s ease-in-out;
 			-webkit-transition: all 0.2s ease-in-out;
 			-o-transition: all 0.2s ease-in-out;
@@ -542,7 +553,8 @@
 					opacity: 1.0;
 					display: inline-block;
 					vertical-align: middle;
-
+					background: rgba(0,0,0,0.65);
+					padding:1.5em;
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
 					-o-transition: all 1s ease;
@@ -554,8 +566,7 @@
 					-o-transform: translateZ(0);
 					-ms-transform: translateZ(0);
 					transform: translateZ(0);
-					background: rgba(0,0,0,0.65);
-					padding:1em;
+				
 				}
 
 			.main.style1.inactive {
@@ -601,6 +612,9 @@
 
 					.main.style2.left .content {
 						left: 0;
+						background: rgba(0,0,0,0.65);
+						padding:1.5em;
+						color:#fff;
 					}
 
 				.main.style2.right {
@@ -1605,17 +1619,7 @@ img.soc-media-icons{
 /* Footer                                                                        */
 /*********************************************************************************/
 
-	#footer {
-	position: relative;
-	height: 5em;
-	line-height: 5em;
-	margin: 0;
-	background-color: #494949;
-	color: #999;
-	color: rgba(185,186,187,0.5);
-	overflow: hidden;
-	clear: left;
-	}
+
 
 		#footer a {
 			color: #999;
@@ -2198,6 +2202,7 @@ a.highlight-button-purple:hover{
 .footer {
 	padding: 80px 0 60px;
 	text-align: center;
+	
 }
 	.footer .btn {
 		display: inline-block;
@@ -2370,5 +2375,5 @@ a.highlight-button-purple:hover{
     right: -40px;
     top: -40px;
 }
-/*-size: cover; */
+/*-size: cover;*/ 
 }
