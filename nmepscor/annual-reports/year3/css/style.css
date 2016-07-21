@@ -897,8 +897,9 @@ p.underlined{
 		top: 0;
 		height: 3em;
 		line-height: 3em;
-		
+		color:rgb(57, 69, 75);
 	}
+
 
 		#nav ul {
 			margin: 0;
