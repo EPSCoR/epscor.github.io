@@ -46,7 +46,7 @@
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
-		color: #39454b;
+		color: #fff;
 		letter-spacing: 0.5px;
 	}
 
@@ -80,7 +80,7 @@
 	}
 
 	a {
-		color: #eee;
+		color: #fff;
 		text-decoration:none;
 		border-bottom:solid thin #999;
 		-moz-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -214,7 +214,13 @@
 			float:left;
 			width:100%;
 			position:relative;
+		}
 		
+		img.responsive-logos{
+			width: 100%;
+			margin-top:1em;
+			max-width:572px;
+			position:relative;
 		}
 
 	/* List */
@@ -269,8 +275,7 @@
 			ul.actions {
 				cursor: default;
 			}
-
-				ul.actions li {
+			ul.actions li {
 					display: inline-block;
 					margin: 0 0 0 0.5em;
 				}
@@ -278,6 +283,23 @@
 				ul.actions li:first-child {
 					margin-left: 0;
 				}
+				
+			ul.actions-revised-year-three {
+				cursor: default;
+   				width: 50%;
+    			float: left;
+    			color:#fff;
+    			margin-left:15%;
+			}
+
+			ul.actions-revised-year-three  li {
+				display: inline-block;
+				margin: 0 0 0 0.5em;
+			}
+
+			ul.actions-revised-year-three  li:first-child {
+				margin-left: 0;
+			}
 
 		ol {
 		}
@@ -989,7 +1011,7 @@ video#bgvid {
 }
 
 	#science {
-		background: url('images/overlay.png'), url('../images/intro3.png');
+		/*background: url('images/overlay.png'), url('../images/intro3.png');*/
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -1009,8 +1031,6 @@ video#bgvid {
    }
 
 }
-
-
 
 /*Science Card links*/
 	
@@ -1074,7 +1094,7 @@ video#bgvid {
 /*********************************************************************************/
 
 	#ed-outreach {
-		background: url('images/overlay.png'), url('../images/ed-outreach.jpg');
+		/*background: url('images/overlay.png'), url('../images/ed-outreach.jpg');*/
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -1101,7 +1121,7 @@ video#bgvid {
 /*********************************************************************************/
 
 	#diversity {
-		background: url('images/overlay.png'), url('../images/intro2.png');
+		/*background: url('images/overlay.png'), url('../images/intro2.png');*/
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -1119,6 +1139,10 @@ video#bgvid {
 	#diversity a{
 		color:#666;
 	}
+	#diversity a.diversity-link{
+		color:#e5c100;
+	}
+	
 /*********************************************************************************/
 /* Metrics Section                                                               */
 /*********************************************************************************/
@@ -1311,15 +1335,14 @@ img.soc-media-icons{
 
 
 .homepage-footer-banner{
-	background-color: #494949;
-	float: left;
+	/*background-color: #494949;*/
+	background: rgba(0,0,0,0.65);
+	height:2.4em;
 	margin-left: auto;
 	margin-right: auto;
-	position: relative;
-	width: 100%;
+	width: 85%;
 	z-index: 999;
 	text-align: center;
-	position: relative;
 }
 
 .homepage-footer-banner .float-left{
@@ -1377,6 +1400,16 @@ img.soc-media-icons{
     border-bottom: 4px solid;
     width: 10px; height: 10px;
     transform: rotate(-45deg);
+}
+
+.footer-bottom-index{
+	
+    background: rgba(0,0,0,0.65);
+    margin-top: 1em;
+	padding:2em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
 }
 
 /*********************************************************************************/

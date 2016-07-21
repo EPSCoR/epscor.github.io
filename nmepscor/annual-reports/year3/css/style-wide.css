@@ -28,8 +28,22 @@
 						left: 60%;
 						background: rgba(0,0,0,0.65);
 						padding:1.5em;
-						color:#fff;
+						color:#fff;						
 					}
+					
+					.main.style3.right .content {
+						width: 85%;
+						height:auto;
+						/*height:28em;*/
+						background: rgba(0,0,0,0.65);
+						padding:1.5em;
+						color:#fff;
+						margin-left:auto;
+						margin-right:auto;
+					}
+					
+				
+					
 
 				.main.style2.inactive {
 				}
