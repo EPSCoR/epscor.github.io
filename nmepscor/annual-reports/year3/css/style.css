@@ -540,7 +540,7 @@
 		}
 
 			.main.fullscreen {
-				height: 100%;
+				/*height: 85%;*/
 			}
 
 			.main.style1 {
@@ -565,7 +565,7 @@
 					/*opacity: 1.0;*/
 					display: inline-block;
 					vertical-align: middle;
-
+					width:85%;
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
 					-o-transition: all 1s ease;
@@ -1336,11 +1336,13 @@ img.soc-media-icons{
 
 .homepage-footer-banner{
 	/*background-color: #494949;*/
-	background: rgba(0,0,0,0.65);
-	height:2.4em;
+	/*background: rgba(0,0,0,0.65);*/
+	/*height:2.4em;*/
 	margin-left: auto;
+	padding-top:1em;
+	padding-bottom:3em;
 	margin-right: auto;
-	width: 85%;
+	/*width: 85%;*/
 	z-index: 999;
 	text-align: center;
 }
@@ -1403,13 +1405,12 @@ img.soc-media-icons{
 }
 
 .footer-bottom-index{
-	
     background: rgba(0,0,0,0.65);
     margin-top: 1em;
-	padding:2em;
+	padding-bottom:1em;
 	margin-left: auto;
 	margin-right: auto;
-	width: 85%;
+	width: 100%;
 }
 
 /*********************************************************************************/
