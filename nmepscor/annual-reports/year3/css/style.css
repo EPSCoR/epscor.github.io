@@ -1986,7 +1986,7 @@ a.highlight-button-purple:hover{
 	margin: 0;
 	padding: 0;
 	
-/*	-webkit-font-smoothing: antialiased;*/
+	-webkit-font-smoothing: antialiased;
 	
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
