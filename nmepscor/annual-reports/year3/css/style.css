@@ -1032,6 +1032,59 @@ video#bgvid {
 
 }
 
+
+
+/*********************************************************************************/
+/* Intro Science Page                                                                    */
+/*********************************************************************************/
+
+	#intro-science-video {
+		/*background: url('images/overlay.png'), url('../images/science.jpg');
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;*/
+		height:auto;
+		background-image: radial-gradient(
+   		circle at top right,
+      	#666,
+      	#000);
+		
+	}
+
+	#intro-science-video h1{
+		color:#fff;
+		font-size:300%;
+		padding: 1em 0 .35em 0;
+		text-align:center;
+	}
+	
+	#intro-science-video p{
+		color:#fff;
+		text-align:center;
+		font-size:125%;
+		padding: 1em;
+		margin-left:auto;
+		margin-right:auto;
+		
+	}
+
+
+	.responsive-video-postcard{
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+	}
+
+	.responsive-video-postcard iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 /*Science Card links*/
 	
 	#science a{
