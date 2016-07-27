@@ -1028,6 +1028,7 @@ video#bgvid {
    #geothermal h2, #uranium h2, #osmotic h2 { 
    	font-size:275%;
 	padding-top:.5em;
+	line-height:110%;
    }
 
 }
