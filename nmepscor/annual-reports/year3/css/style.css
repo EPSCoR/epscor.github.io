@@ -999,6 +999,7 @@ video#bgvid {
 		font-size:300%;
 		padding: 1em 0 .35em 0;
 		text-align:center;
+		line-height:110%;
 }
 	
 	#intro-science p{
