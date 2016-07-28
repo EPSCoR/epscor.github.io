@@ -963,8 +963,8 @@ p.underlined{
 	}
 
 /*Video CSS*/		
-video#bgvid { 		
-    position: fixed;		
+video#begin-vid { 		
+    position: absolute;		
     top: 50%;		
     left: 50%;		
     min-width: 100%;		
@@ -2482,4 +2482,9 @@ a.highlight-button-purple:hover{
     position: absolute;
     right: -40px;
     top: -40px;
+}
+
+#begin-vid {
+	
+	z-index:-100;
 }
