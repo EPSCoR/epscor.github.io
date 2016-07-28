@@ -1520,6 +1520,33 @@ img.soc-media-icons{
 		font-size:325%;
 	}
 }
+
+#Externships {
+		
+		clear:both;
+		overflow:auto;		
+		text-align:center;
+		color:#fff;
+		background-image: radial-gradient(
+      	circle at top right,
+      	#666,
+      	#000
+    );
+ 
+	}
+
+@media  (min-width: 769px) {
+
+	#Externships h2 {
+		letter-spacing:normal;
+		text-align:center;
+		color:#fff;
+		/*font-weight:400;*/
+		padding-top:.5em;
+		font-size:325%;
+	}
+}
+
 	#STEMAP, #FLPDI, #GUTC, #Seed {
 	
 		clear:both;
