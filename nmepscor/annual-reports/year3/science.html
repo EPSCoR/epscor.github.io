@@ -22,6 +22,9 @@
    		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="http://unslider.com/unslider.min.js"></script>
    		
+   		<!-- jQuery Video Pop Up -->
+		<script src="js/jquery.bpopup.min.js"></script>
+		
    		<!-- Style Sheets -->
    		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/skel.css" />
@@ -390,13 +393,42 @@ can result in high energy output from the molecules, called excited state lifeti
 				<div class="block-3">
 					<h4>University of New Mexico, <br> New Mexico State University</h4>
 			<!--	<a href="#" class="highlight-button">Button to highlight</a>-->
+			<hr/>
+				<div class="my-video-button-ssn"><img src="images/ssn-2016-video-thumb.jpg"></div>
+				
+					<!-- Element to pop up -->
+					<div class="element_to_pop_up_video">
+			        <span class="button b-close"><span>X</span></span>    
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/2Cbi9lUwXZs?list=PLr7S80asPQD4HGExJ_msgpXns5OAtVvjR" frameborder="0" allowfullscreen></iframe>					</div>
 				</div>
+
 				
 				<div class="block-9">
+<<<<<<< Updated upstream
 				<p>The Social & Natural Science Nexus team works toward developing a cutting-edge multidisciplinary model that links natural and human systems to better understand the trade-offs that occur between different energy and economic development choices while considering the potential for socioeconomic, environmental, and water use sustainability. This research considers interactions and feedbacks between the social and natural sciences in order to determine the sustainability and acceptability of energy production and use. The results will enable policy makers and researchers to compare and/or integrate information across many areas to address questions to help New Mexico develop its energy resources in a sustainable way. </p>
                 <p>NM EPSCoR supported the Water Resources and Research Institute at NMSU to create a Dynamic Statewide Water Budget (DSWB) system dynamics model. System dynamics is an approach to model complex systems over time. The DSWB is a model that will support local and regional planning of New Mexico’s limited and critically important water resources. For the first time, the DSWB synthesizes water supply and demand information from across the state into a single, easily accessible location, and in such a way that users can view information at a variety of spatial scales. The model provides mass balance calculations for river basins and water planning regions across the state, which is critically important information for water planners, particularly in light of climate change. </p>
                 <p>Some of the new information developed includes statewide assessments of recharge to groundwater, levels and storage changes of groundwater, remotely sensed/modeled precipitation data, and surface water flow statistics. Of particular interest, new research is adding to our understanding of evapotranspiration rates in New Mexico, an important component of the water balance that previously was only modeled or estimated. EPSCoR-supported graduate students have been trained in system dynamics modeling and have begun research on case studies in the Lower Rio Grande watershed that will be integrated with the DSWB to inform trade-offs between water availability and energy and agricultural production.</p>
 <p>The DSWB is the first major step in completing a larger statewide, interdisciplinary system dynamics model that will integrate social and natural sciences by joining three energy/water nexus budgets: energy, social preferences, and water. It will ultimately be part of a living web-based State Water Plan housed at the New Mexico Interstate Stream Commission.</p>
+=======
+				<p>The Social &amp; Natural Science Nexus team works toward developing a cutting-edge multidisciplinary model that links natural and human systems to better 
+					understand the trade-offs that occur between different energy and economic development choices while considering the potential for socioeconomic, environmental, 
+					and water use sustainability. This research considers interactions and feedbacks between the social and natural sciences in order to determine the sustainability 
+					and acceptability of energy production and use. The results will enable policy makers and researchers to compare and/or integrate information across many areas 
+					to address questions to help New Mexico develop its energy resources in a sustainable way. </p>
+                <p>NM EPSCoR supported the Water Resources and Research Institute at NMSU to create a Dynamic Statewide Water Budget (DSWB) system dynamics model. System dynamics 
+                	is an approach to model complex systems over time. The DSWB is a model that will support local and regional planning of New Mexico’s limited and critically 
+                	important water resources. For the first time, the DSWB synthesizes water supply and demand information from across the state into a single, easily accessible 
+                	location, and in such a way that users can view information at a variety of spatial scales. The model provides mass balance calculations for river basins and water 
+                	planning regions across the state, which is critically important information for water planners, particularly in light of climate change. </p>
+                <p>Some of the new information developed includes statewide assessments of recharge to groundwater, levels and storage changes of groundwater, remotely sensed/modeled 
+                	precipitation data, and surface water flow statistics. Of particular interest, new research is adding to our understanding of evapotranspiration rates in New Mexico, 
+                	an important component of the water balance that previously was only modeled or estimated. EPSCoR-supported graduate students have been trained in system dynamics 
+                	modeling and have begun research on case studies in the Lower Rio Grande watershed that will be integrated with the DSWB to inform trade-offs between water 
+                	availability and energy and agricultural production.</p>
+				<p>The DSWB is the first major step in completing a larger statewide, interdisciplinary system dynamics model that will integrate social and natural sciences by 
+					joining three energy/water nexus budgets: energy, social preferences, and water. It will ultimately be part of a living web-based State Water Plan housed at 
+					the New Mexico Interstate Stream Commission.</p>
+>>>>>>> Stashed changes
 
 				</div>
 
@@ -474,6 +506,28 @@ NM EPSCoR develops. Each Energize New Mexico team has a CI team liaison to bette
 						<!--<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
 					</ul>
 			</footer>
+			
+					<!-- Video Pop Script -->
+			<script>
+			// Video Popup Script
+			  // Semicolon (;) to ensure closing of earlier scripting
+			    // Encapsulation
+			    	// $ is assigned to jQuery
+			    		;(function($) {
+			        	 // DOM Ready
+			        	$(function() {
+						// Binding a click event
+				        // From jQuery v.1.7.0 use .on() instead of .bind()
+				            $('.my-video-button-ssn').bind('click', function(e) {
+				                // Prevents the default action to be triggered. 
+				                e.preventDefault();
+				                // Triggering bPopup when click event is fired
+				                $('.element_to_pop_up_video').bPopup();
+  
+			            });
+			        });
+			    })(jQuery);
+			</script>
 			
 			<!-- Slider script -->
 			<script>
