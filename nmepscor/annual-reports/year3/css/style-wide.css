@@ -26,18 +26,18 @@
 			
 					.main.style2.right .content {
 						left: 60%;
-						background: rgba(0,0,0,0.65);
+						/*background: rgba(0,0,0,0.65);*/
 						padding:1.5em;
-						color:#fff;						
+						color:#333;						
 					}
 					
 					.main.style3.right .content {
 						width: 85%;
 						height:auto;
 						/*height:28em;*/
-						background: rgba(0,0,0,0.65);
+						/*background: rgba(0,0,0,0.65);*/
 						padding:1.5em;
-						color:#fff;
+						color:#333;
 						margin-left:auto;
 						margin-right:auto;
 					}
