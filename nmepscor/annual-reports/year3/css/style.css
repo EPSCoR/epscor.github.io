@@ -552,6 +552,7 @@
 					font-size: 4.25em;
 					line-height: 1em;
 					letter-spacing: -4px;
+					text-shadow: 3px 2px #333;
 				}
 
 				.main.style1:before {
@@ -578,7 +579,7 @@
 					-ms-transform: translateZ(0);
 					transform: translateZ(0);
 					
-					background: rgba(0,0,0,0.65);		
+					/*background: rgba(0,0,0,0.65);		*/
 				padding:1.5em;
 				}
 
@@ -696,6 +697,7 @@
 
 				.dark .button.style2.down {
 					background-image: url('images/dark-arrow.svg');
+					background-color: rgba(0,0,0,0.65);
 				}
 
 /*********************************************************************************/
