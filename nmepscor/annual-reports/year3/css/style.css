@@ -2459,22 +2459,26 @@ a.highlight-button-purple:hover{
 		margin: 0 auto;
 	}
 	
+	
 	.my-video-button-ssn{
 		background: #2c919c;
 		border: none; 
 		cursor: pointer;
 		clear: both;
 		font-size: 13px;
-		width:150px;
+
 		margin-left:-4em;
 		float:left;
+	
 	}
 	
 	.my-video-button-ssn img{
 		width:20%;
 		border:solid thin #ccc;
 		padding:1em;
+		margin-left:5em;
 	}
+
 	
 }
 
@@ -2488,6 +2492,24 @@ a.highlight-button-purple:hover{
 		font-size: 13px;
 		width:150px;
 		margin: 0 auto;
+	}
+	
+	.my-video-button-ssn{
+		background: #2c919c;
+		border: none; 
+		cursor: pointer;
+		clear: both;
+		font-size: 13px;
+	
+		margin-left:1em;
+		float:left;
+	
+	}
+	
+	.my-video-button-ssn img{
+		width:20%;
+		border:solid thin #ccc;
+		padding:1em;
 	}
 }
 
