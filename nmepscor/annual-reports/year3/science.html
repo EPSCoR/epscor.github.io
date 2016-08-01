@@ -19,16 +19,11 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
 
-
-
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.6/slick.min.js"></script>
    		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="js/unslider.min.js"></script>		
-		
-   		<script src="https://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js"></script>
-
    		<!-- jQuery Video Pop Up -->
-		<script src="js/jquery.bpopup.min.js"></script>
+   		<script src="https://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js"></script>
 		
    		<!-- Style Sheets -->
    		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
@@ -37,12 +32,11 @@
 		<link rel="stylesheet" href="css/style-wide.css" />
 		<link rel="stylesheet" href="css/style-normal.css" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.6/slick.css"/>
+		<link rel="stylesheet" href="css/magnific-popup.css" />
+
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		
-		<link rel="stylesheet" href="https://dimsemenov-static.s3.amazonaws.com/dist/magnific-popup.css" />
 
-	
 	</head>
 	<body>
 
@@ -537,47 +531,19 @@
 			
 			<script>
 			$('.video').magnificPopup({
-		  type: 'iframe',
-		  
-		  
-		  iframe: {
-		     markup: '<div class="mfp-iframe-scaler">'+
-		                '<div class="mfp-close"></div>'+
-		                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-		                '<div class="mfp-title">Some caption</div>'+
-		              '</div>'
-		  },
-		  callbacks: {
-		    markupParse: function(template, values, item) {
-		     values.title = item.el.attr('title');
-		    }
-		  }
-		  
-		  
-		});
-		</script>
-			
-					<!-- Video Pop Script -->
-			<script>
-			// Video Popup Script
-			  // Semicolon (;) to ensure closing of earlier scripting
-			    // Encapsulation
-			    var $ =jQuery.noConflict();
-			    	// $ is assigned to jQuery
-			    		;(function($) {
-			        	 // DOM Ready
-			        	$(function() {
-						// Binding a click event
-				        // From jQuery v.1.7.0 use .on() instead of .bind()
-				            $('.my-video-button-ssn').bind('click', function(e) {
-				                // Prevents the default action to be triggered. 
-				                e.preventDefault();
-				                // Triggering bPopup when click event is fired
-				                $('.element_to_pop_up_video').bPopup();
-  
-			            });
-			        });
-			    })(jQuery);
+			  type: 'iframe',
+			  iframe: {
+			     markup: '<div class="mfp-iframe-scaler">'+
+			                '<div class="mfp-close"></div>'+
+			                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+			              '</div>'
+			  },
+			  callbacks: {
+			    markupParse: function(template, values, item) {
+			     values.title = item.el.attr('title');
+			    }
+			  }
+			});
 			</script>
 			
 			<!-- Slider script -->
