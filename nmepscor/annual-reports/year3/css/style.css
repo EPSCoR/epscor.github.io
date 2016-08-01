@@ -2567,3 +2567,9 @@ a.highlight-button-purple:hover{
     -moz-object-fit: cover;
     -o-object-fit: cover;
 }
+
+.mfp-title {
+  position:absolute;
+  color: #FFF;
+  background: red;
+}
