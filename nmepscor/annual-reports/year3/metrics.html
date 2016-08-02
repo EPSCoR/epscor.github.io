@@ -4,7 +4,7 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 		<title>Energize New Mexico Year 3 Annual Report - Metrics</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -19,8 +19,7 @@
 		<script src="js/init.js"></script>
 	 
 	 	<!-- Load Charts -->
-   		 <script src="js/annual-report-charts.js"></script>
-
+   		<script src="js/annual-report-charts.js"></script>
 
    		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 		<noscript>	
@@ -33,13 +32,116 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	<!--Load JQuery-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-    
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script> 
+</head>
+
+<body>
+<!-- Header -->
+	<header id="header">
+	<!-- Logo -->
+	<a href="http://www.nmepscor.org/annual-reports/year3"><img src="images/RII4LOGO_BOX.png" width="140" height="48" alt="NM EPSCoR Logo"/></a> 
+		<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="science.html">Science &amp; Research</a></li>
+				<li><a href="education-and-outreach.html">Education &amp; Outreach</a></li>
+				<li><a href="diversity.html">Diversity</a></li>
+				<li><a href="metrics.html">Metrics</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Metrics Intro -->
+			<div id="intro-metrics" >
+				<div class="content container 75%">
+					  <h1>Year 3 Metrics</h1>
+					<p>In order to properly report to the National Science Foundation every year, NM EPSCoR keeps track of 
+						several project metrics, including funding, diversity of participants, and social media numbers. </p> 
+				</div>
+			</div>
+			
+			<div id="intro-metrics-soc-media" >
+				<div class="content container 75%">
+					  <h1>Social Media</h1>
+					  	<div class = "social-media-left">
+							<h1>1,559</h1>
+							<p align="center">Followers</p>
+					  	</div>
+				 		<div class = "social-media-right">
+							<img src="images/facebook.png" class="soc-media-icons"><h2 class="padded-left">251</h2><p class="clear-left">Total likes for our <a href="https://www.facebook.com/NewMexicoEPSCoR">Facebook page</a></p>
+							<img src="images/twitter.png" class="soc-media-icons"><h2 class="padded-left">354</h2><p class="clear-left">Followers for our Twitter account <a href="http://www.twitter.com/nmepscor">@nmepscor</a></p>
+							<img src="images/email.png" class="soc-media-icons"><h2 class="padded-left">895</h2><p class="clear-left">Unique subscribers to our three email <a href="http://nmepscor.us7.list-manage2.com/subscribe/post?u=deae9882044717bfc14fe7a4c&amp;id=400547313e">listservs</a></p>
+					  	<p class="small-credit">New Mexico EPSCoR can also be found on 
+					  		<a href="https://www.flickr.com/photos/nm_epscor/albums/" target="_blank">Flickr</a>, <a href="http://instagram.com/NMEPSCoR" target="_blank">Instagram</a>, <a href="https://www.youtube.com/user/NewMexicoEPSCoR" target="_blank">YouTube</a>, and <a href="http://www.nmepscor.org" target="_blank">nmepscor.org</a></p>
+					  	</div>
+				</div>
+			</div>
+			<!--Begin Publications -->
+			<div class="metrics-box-postcards">
+				<div class="metrics-box-inner">
+						<h2>Presentations, Proposals, and Publications<br/>&nbsp;</h2>
+						<!-- Bar Graph - Pubs, Proposals, and Presentations -->
+			    		<div id="columnchart-publications"></div>
+				</div>
+			</div>
+			
+			<!--Begin Publications -->
+			<div class="metrics-box-postcards">
+				<div class="metrics-box-inner">
+						<h2>Presentations by Component, Years 1-3<br/>&nbsp;</h2>
+						<!-- Bar Graph - Presentations by Component / Years -->
+			    		<div id="columnchart-presentations-by-component"></div>
+				</div>
+			</div>
+			
+			<!--Begin Demographics -->
+           	<div class="metrics-box-postcards-demo">
+				<div class="metrics-box-inner">
+						<h2>Diversity &amp; Demographics</h2>
+						<!-- Donut Chart Gender-->
+			    		<div id="donutchart-gender"></div>
+			    		<!-- Donut Chart Minority-->
+			        	<div id="donutchart-minority"></div>
+				</div>
+			</div>
+			
+			<!--Begin Funding -->
+			<div class="metrics-box-postcards-funding">
+				<div class="metrics-box-inner">
+						<h2>New Mexico EPSCoR Funding</h2>
+						<!-- Donut Chart Funding-->
+		        		<div id="donutchart-funding"></div>
+			        	<!--Begin Funding Stacked-->
+			        	<div id="stacked-funding-bar-chart" ></div>
+
+				</div>
+			</div>
+
+			<!-- Footer -->
+			
+			<footer id="footer">
+				<!-- Icons -->
+					<ul class="actions">
+						<li><a href="https://twitter.com/NMEPSCoR" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/NewMexicoEPSCoR" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://plus.google.com/+NmepscorOrg/posts" target="_blank" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="https://www.youtube.com/user/NewMexicoEPSCoR" target="_blank" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+						<li><a href="https://www.flickr.com/photos/nm_epscor/albums/" target="_blank" class="icon fa-flickr"><span class="label">Flickr</span></a></li>
+						<!--<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
+					</ul>
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; <a href="http://www.nmepscor.org" target="_blank">New Mexico EPSCoR</a></li>
+						<!--<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
+					</ul>
+			</footer>
+ 	
+ 	<script type="text/javascript">
     /*----- Documents Bar Chart-----*/ 
-
+    google.load("visualization", "1.1", {packages:['bar', 'corechart']});
     google.setOnLoadCallback(drawChart);
 	function drawChart() {	
         var data = google.visualization.arrayToDataTable([
@@ -50,30 +152,53 @@
           ['Publications (peer reviewed only)', 15, 26]
         ]);
 
+		var data2 = google.visualization.arrayToDataTable([
+          ['Science Component', 'Year One', 'Year Two', 'Year Three'],
+          ['Bioalgal', 10, 15, 35],
+          ['Solar', 25, 42, 9],
+          ['Osmotic', 1,11, 11],
+          ['Geothermal', 2, 3, 23],
+          ['Uranium', 1, 13, 15],
+          ['S/N Science Nexus', 1, 5, 10],
+          ['Workforce Development', 8, 12, 31],
+          ['Diversity', 10, 6, 8],
+          ['Cyberinfrastructure', 5, 9, 9]
+        ]);
+        
         var options = {
           chart: {
             title: 'Target vs. Actual',
             subtitle: 'Presentations include those made at conferences, on panels, and posters.',
-            
           },
           	height: 400,
           	width:"100%",
             colors: ['#f98212', '#5b4e97', '#7570b3','#38b8c6'],
               		  
         };
-      
+        
+        var options2 = {
+          chart: {
+            title: 'Presentations by Component, Years 1-3',
+          },
+          	height: 400,
+          	width:"100%",
+            colors: ['#666', '#336666', '#cc3333','#38b8c6'],
+              		  
+        };
+         
+        // Instantiate and draw our chart, passing in some options.
 		var chart = new google.charts.Bar(document.getElementById('columnchart-publications'));
         chart.draw(data, options);
+        var chart2 = new google.charts.Bar(document.getElementById('columnchart-presentations-by-component'));
+        chart2.draw(data2, options2);
+        
       }
       
       $(window).resize(function(){
   		drawChart();
 		});	
 		
-      google.load("visualization", "1.1", {packages:["bar", "corechart"]});
-	
-	/*-----Gender Pie Chart-----*/ 
-	 
+/*-----Gender Pie Chart-----*/ 
 	 google.setOnLoadCallback(drawChart2);
      function drawChart2() {
         var data = google.visualization.arrayToDataTable([
@@ -100,8 +225,8 @@
          $(window).resize(function(){
   		drawChart2();
 		});	
-     /*-----Minority Pie Chart-----*/ 
-     
+		
+/*-----Minority Pie Chart-----*/ 
 	 google.setOnLoadCallback(drawChart3);
      function drawChart3() {
       var data = google.visualization.arrayToDataTable([
@@ -214,107 +339,5 @@
 
       
   </script>
-    
-</head>
-<body>
-
-<!-- Header -->
-<header id="header">
-		<!-- Logo -->
-
-	<a href="http://www.nmepscor.org/annual-reports/year3"><img src="images/RII4LOGO_BOX.png" width="140" height="48" alt="NM EPSCoR Logo"/></a> 
-		<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="science.html">Science &amp; Research</a></li>
-							<li><a href="education-and-outreach.html">Education &amp; Outreach</a></li>
-							<li><a href="diversity.html">Diversity</a></li>
-							<li><a href="metrics.html">Metrics</a></li>
-						</ul>
-					</nav>
-			</header>
-
-	<!-- Metrics Intro -->
-			<div id="intro-metrics" >
-				<div class="content container 75%">
-					  <h1>Year 3 Metrics</h1>
-					<p>In order to properly report to the National Science Foundation every year, NM EPSCoR keeps track of 
-						several project metrics, including funding, diversity of participants, and social media numbers. </p> 
-				</div>
-			</div>
-			
-			<div id="intro-metrics-soc-media" >
-				<div class="content container 75%">
-					  <h1>Social Media</h1>
-					  	<div class = "social-media-left">
-							<h1>1,559</h1>
-							<p align="center">Followers</p>
-					  	</div>
-				 		<div class = "social-media-right">
-							<img src="images/facebook.png" class="soc-media-icons"><h2 class="padded-left">251</h2><p class="clear-left">Total likes for our <a href="https://www.facebook.com/NewMexicoEPSCoR">Facebook page</a></p>
-							<img src="images/twitter.png" class="soc-media-icons"><h2 class="padded-left">354</h2><p class="clear-left">Followers for our Twitter account <a href="http://www.twitter.com/nmepscor">@nmepscor</a></p>
-							<img src="images/email.png" class="soc-media-icons"><h2 class="padded-left">895</h2><p class="clear-left">Unique subscribers to our three email <a href="http://nmepscor.us7.list-manage2.com/subscribe/post?u=deae9882044717bfc14fe7a4c&amp;id=400547313e">listservs</a></p>
-					  	<p class="small-credit">New Mexico EPSCoR can also be found on 
-					  		<a href="https://www.flickr.com/photos/nm_epscor/albums/" target="_blank">Flickr</a>, <a href="http://instagram.com/NMEPSCoR" target="_blank">Instagram</a>, <a href="https://www.youtube.com/user/NewMexicoEPSCoR" target="_blank">YouTube</a>, and <a href="http://www.nmepscor.org" target="_blank">nmepscor.org</a></p>
-					  	</div>
-				
-				</div>
-			</div>
-			
-			
-			<!--Begin Publications -->
-			<div class="metrics-box-postcards">
-				<div class="metrics-box-inner">
-						<h2>Presentations, Proposals, and Publications<br />&nbsp;</h2>
-						<!-- Bar Graph - Pubs, Proposals, and Presentations -->
-			    		<div id="columnchart-publications"></div>
-				</div>
-			</div>
-			
-			<!--Begin Demographics -->
-
-           	<div class="metrics-box-postcards-demo">
-				<div class="metrics-box-inner">
-						<h2>Diversity &amp; Demographics</h2>
-						<!-- Donut Chart Gender-->
-			    		<div id="donutchart-gender"></div>
-			    		<!-- Donut Chart Minority-->
-			        	<div id="donutchart-minority"></div>
-				</div>
-			</div>
-			
-			<!--Begin Funding -->
-            
-			<div class="metrics-box-postcards-funding">
-				<div class="metrics-box-inner">
-						<h2>New Mexico EPSCoR Funding</h2>
-						<!-- Donut Chart Funding-->
-		        		<div id="donutchart-funding"></div>
-			        	<!--Begin Funding Stacked-->
-			        	<div id="stacked-funding-bar-chart" ></div>
-
-				</div>
-			</div>
-
-			<!-- Footer -->
-			
-			<footer id="footer">
-				<!-- Icons -->
-					<ul class="actions">
-						<li><a href="https://twitter.com/NMEPSCoR" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/NewMexicoEPSCoR" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://plus.google.com/+NmepscorOrg/posts" target="_blank" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="https://www.youtube.com/user/NewMexicoEPSCoR" target="_blank" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
-						<li><a href="https://www.flickr.com/photos/nm_epscor/albums/" target="_blank" class="icon fa-flickr"><span class="label">Flickr</span></a></li>
-						<!--<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
-					</ul>
-				<!-- Menu -->
-					<ul class="menu">
-						<li>&copy; <a href="http://www.nmepscor.org" target="_blank">New Mexico EPSCoR</a></li>
-						<!--<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
-					</ul>
-			</footer>
-
 	</body>
 </html>
