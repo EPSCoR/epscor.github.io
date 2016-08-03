@@ -82,7 +82,7 @@
         };
          
         // Instantiate and draw our chart, passing in some options.
-		var chart = new google.charts.Bar(document.getElementById('columnchart-publications'));
+		var chart = new google.visualization.BarChart(document.getElementById('columnchart-publications'));
         chart.draw(data, options);
   
    		var chart2 = new google.visualization.ColumnChart(document.getElementById('columnchart-presentations-by-component'));
@@ -255,8 +255,7 @@
 			<!--Begin Publications -->
 			<div class="metrics-box-postcards">
 				<div class="metrics-box-inner">
-						<h2>Publications &amp; Proposals<br/>&nbsp;</h2>
-						<!-- Bar Graph - Pubs, Proposals, and Presentations -->
+						<h2>Publications &amp; Proposals</h2>
 			    		<div id="columnchart-publications"></div>
 				</div>
 			</div>
@@ -264,8 +263,7 @@
 			<!--Begin Publications -->
 			<div class="metrics-box-postcards">
 				<div class="metrics-box-inner">
-						<h2>Presentations by Component, Years 1-3<br/>&nbsp;</h2>
-						<!-- Bar Graph - Presentations by Component / Years -->
+						<h2>Presentations by Component, Years 1-3</h2>
 			    		<div id="columnchart-presentations-by-component"></div>
 				</div>
 			</div>
