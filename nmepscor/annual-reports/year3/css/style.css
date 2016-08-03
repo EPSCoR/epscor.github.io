@@ -1290,12 +1290,13 @@ img.soc-media-icons{
 }
 
 .metrics-box-postcards-demo{
-	width:85%;
+	/*width:85%;
 	height:auto;
 	margin-left:auto;
 	margin-right:auto;
 	padding:1em;
-	clear:both;
+	clear:both;*/
+	display:none;
 }
 	
 .metrics-box-inner {
@@ -1315,22 +1316,28 @@ img.soc-media-icons{
 /*donut charts */
 	
 #donutchart-minority{
-	display:block;
+	/*display:block;
 	width:47%;
 	float:left;	
-	clear:none;	
+	clear:none;	*/
+	display:none;
 }
-	
+
+#donutchart-funding{
+	display:none;
+}	
 #donutchart-gender{
-	display:block;	
+	/*display:block;	
 	float:left;	
 	clear:none;
 	display:block;
-	width:47%;	
+	width:47%;	*/
+	display:none;
 }
 
 #stacked-funding-bar-chart{
 	width:100%;
+	
 }
 
 /*********************************************************************************/
