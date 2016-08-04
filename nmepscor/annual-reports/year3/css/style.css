@@ -2575,14 +2575,3 @@ a.highlight-button-purple:hover{
   color: #FFF;
   background: red;
 }
-
-/*Google Chart font -size*/
-options:{
-    hAxis : { 
-        textStyle : {
-            fontSize: 7 // or the number you want
-        }
-
-    }
-
-}
