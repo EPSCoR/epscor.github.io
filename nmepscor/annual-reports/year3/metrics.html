@@ -66,11 +66,14 @@
             title: 'Target vs. Actual',
            // subtitle: 'Presentations include those made at conferences, on panels, and posters.',
           },
-          bars: 'horizontal' ,// Required for Material Bar Charts.
+          	bars: 'horizontal' ,// Required for Material Bar Charts.
           	height: 400,
           	width:"100%",
             colors: ['#666', '#336666', '#8e0c0d','#38b8c6'], 		  
+        	 legend: {position: 'top', textStyle: {fontSize: 14}}
+
         };
+
 
   		var options2 = {
           chart: {
@@ -79,6 +82,11 @@
           	height: 400,
           	width:"100%",
             colors: ['#666', '#336666', '#8e0c0d','#38b8c6'],
+            hAxis : { 
+        		textStyle : {
+            	fontSize: 12,
+    			}	
+			}
         };
          
         // Instantiate and draw our chart, passing in some options.
