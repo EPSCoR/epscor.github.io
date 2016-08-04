@@ -994,7 +994,8 @@ video#begin-vid {
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;*/
 		height:auto;
-		background:#B2B2B2;
+	    background-image: radial-gradient( circle at top right, #666, #000);
+}
 		
 	}
 
